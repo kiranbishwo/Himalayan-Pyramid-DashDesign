@@ -1,217 +1,140 @@
-* {
-    margin: 0;
-    padding: 0
+:root {
+    --blue: #1abc9c;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74c3c;
+    --orange: #fd7e14;
+    --yellow: #f1c40f;
+    --green: #2ecc71;
+    --teal: #20c997;
+    --cyan: #00acc1;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #1abc9c;
+    --secondary: #6c757d;
+    --success: #2ecc71;
+    --info: #00acc1;
+    --warning: #f1c40f;
+    --danger: #e74c3c;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Open Sans", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-html {
-    height: 100%
-}
-
-p {
-    color: grey
-}
-
-#heading {
-    text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal
-}
-
-#msform {
+.custom_next_btn,.custom_prev_btn,.custom_back_btn,.custom_reset_btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #373a3c;
     text-align: center;
-    position: relative;
-    margin-top: 20px
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.625rem 1.1875rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-#msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
+.custom_next_btn {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+.custom_next_btn:hover {
+    color: #fff;
+    outline: none;
+    background-color: #159a80;
+    border-color: #148f77;
 }
 
-.form-card {
-    text-align: left
+.custom_next_btn:focus, .custom_next_btn.focus {
+    outline: none;
+    box-shadow: 0 0 0 0rem rgba(60, 198, 171, 0.5);
 }
 
-#msform fieldset:not(:first-of-type) {
-    display: none
+.custom_next_btn.disabled, .custom_next_btn:disabled {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
 }
 
-#msform input,
-#msform textarea {
-    padding: 8px 15px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    background-color: #ECEFF1;
-    font-size: 16px;
-    letter-spacing: 1px
+.custom_back_btn {
+    color: #fff;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
 }
 
-#msform input:focus,
-#msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #673AB7;
-    outline-width: 0
+.custom_back_btn:hover {
+    color: #fff;
+    background-color: #e12e1c;
+    border-color: #d62c1a;
 }
 
-#msform .action-button {
-    width: 100px;
-    background: #673AB7;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
+.custom_back_btn:focus, .custom_back_btn.focus {
+    box-shadow: 0 0 0 0rem rgba(235, 103, 89, 0.5);
 }
 
-#msform .action-button:hover,
-#msform .action-button:focus {
-    background-color: #311B92
+.custom_back_btn.disabled, .custom_back_btn:disabled {
+    color: #fff;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
 }
 
-#msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
+.custom_reset_btn {
+    color: #fff;
+    background-color: #f1c40f;
+    border-color: #f1c40f;
 }
 
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #000000
+.custom_reset_btn:hover {
+    color: #fff;
+    background-color: #cea70c;
+    border-color: #c29d0b;
 }
 
-.card {
-    z-index: 0;
-    border: none;
-    position: relative
+.custom_reset_btn:focus, .custom_reset_btn.focus {
+    box-shadow: 0 0 0 0rem rgba(243, 205, 51, 0.5);
 }
 
-.fs-title {
-    font-size: 25px;
-    color: #673AB7;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left
+.custom_reset_btn.disabled, .custom_reset_btn:disabled {
+    color: #fff;
+    background-color: #f1c40f;
+    border-color: #f1c40f;
 }
 
-.purple-text {
-    color: #673AB7;
-    font-weight: normal
+.custom_prev_btn {
+    color: #fff;
+    background-color: #00acc1;
+    border-color: #00acc1;
 }
 
-.steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right
+.custom_prev_btn:hover {
+    color: #fff;
+    background-color: #008a9b;
+    border-color: #007f8e;
 }
 
-.fieldlabels {
-    color: gray;
-    text-align: left
+.custom_prev_btn:focus, .custom_prev_btn.focus {
+    box-shadow: 0 0 0 0rem rgba(38, 184, 202, 0.5);
 }
 
-#progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey
-}
-
-#progressbar .active {
-    color: #673AB7
-}
-
-#progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 25%;
-    float: left;
-    position: relative;
-    font-weight: 400
-}
-
-#progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f13e"
-}
-
-#progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
-}
-
-#progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f030"
-}
-
-#progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
-}
-
-#progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
-    font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
-}
-
-#progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
-}
-
-#progressbar li.active:before,
-#progressbar li.active:after {
-    background: #673AB7
-}
-
-.progress {
-    height: 20px
-}
-
-.progress-bar {
-    background-color: #673AB7
-}
-
-.fit-image {
-    width: 100%;
-    object-fit: cover
+.custom_prev_btn.disabled, .custom_prev_btn:disabled {
+    color: #fff;
+    background-color: #00acc1;
+    border-color: #00acc1;
 }
