@@ -59,10 +59,10 @@
                     <li class="nav-item">
 					    <a href="package.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Package</span></a>
 					</li>
-					<li class="nav-item">
+                    <li class="nav-item">
 					    <a href="blog.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Blog</span></a>
 					</li>
-					<li class="nav-item">
+                    <li class="nav-item">
 					    <a href="team.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Our Teams</span></a>
 					</li>
 
@@ -281,11 +281,11 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Package</h5>
+                            <h5 class="m-b-10">blog</h5>
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#!">Package</a></li>
+                            <li class="breadcrumb-item"><a href="#!">blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -299,44 +299,72 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-6">
-                                <h5>All Packages </h5>
+                                <h5>Add Member</h5>
                             </div>
                             <div class="col-6 text-right">
-                                <a href="addNewPackage.html" class=" btn btn-primary" >Add New Package</a>
+                                <a href="addnewblog.html" class=" btn btn-primary" >Add New Member</a>
                             </div>
                         </div>
-                        
+                        <div>
+                            <div class="container">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="teamname">Full Name</label>
+                                          <input type="text" class="form-control" id="teamname" placeholder="Enter Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="formpassword">Password</label>
+                                          <input type="password" class="form-control" id="formpassword" placeholder="Password">
+                                        </div>
+                                      </div>
+                                      <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="formphn">phone no:</label>
+                                             <input type="text" class="form-control" id="formphn" placeholder="phone no">
+                                        </div>
+                                            <div class="form-group col-md-6">
+                                            <label for="teamselect">role</label>
+                                            <select class="custom-select" id="teamselect">
+                                                <option selected>Choose...</option>
+                                                <option value="1">CEO</option>
+                                                <option value="2">Manager</option>
+                                                <option value="3">Accountant</option>
+                                                <option value="4">Tour Manager</option>
+                                                <option value="5">Receptionist</option>
+                                                <option value="6">Content Writer</option>
+                                              </select>
+                                        </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail4">Email:</label>
+                                            <input type="email" class="form-control" id="formemail" placeholder="Enter Email">
+                                         </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">Cover Photo</label>
+                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        </div>
+                                        
+                                      </div>
+                                  </form>
+                            </div>
+
+
+
+
+
+
+                        </div>
                        
                         
                     </div>
-                    <div class="card-body table-border-style">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Package Name</th>
-                                        <th>Cost</th>
-                                        <th>Duration</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Everest Trek</td>
-                                        <td>Rs 5000</td>
-                                        <td>14 days</td>
-                                        <td><a href="" type="button" class="btn btn-info"><i class="feather mr-2 icon-info"></i>Edit</a></td>
-                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLive"><i class="feather mr-2 icon-slash"></i>Delete</button></td>
-                                    </tr>
+
+                    
 									
                                 
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                            
                 </div>
             </div>
                 
@@ -351,7 +379,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLiveLabel">Delete Conformation!!!</h5>
+                <h5 class="modal-title" id="exampleModalLiveLabel">Conformation!!!</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
